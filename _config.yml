@@ -1,0 +1,6 @@
+title: GLEAM Data Package Profile
+description: Documentation for the GLEAM metadata profile
+theme: tdwg/petridish
+markdown: kramdown
+repository: tscnlab/GLEAM-dp-metadata
+metadata_profile: metadata/gleam-dp-profile.json
