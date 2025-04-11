@@ -1,0 +1,45 @@
+{
+  "$schema": "https://frictionlessdata.io/schemas/profile-spec.json",
+  "name": "gleam-dp",
+  "title": "GLEAM Data Package Profile",
+  "description": "A metadata profile for describing neuroscience and chronobiology study datasets, participants, and associated metadata.",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "GLEAM DP Development Team",
+      "email": "johannes.zauner@tum.de"
+    }
+  ],
+  "documentation": "https://salmathalji.github.io/GLEAM-dp-metadata",
+  "schemas": {
+    "study": "study-schema.json",
+    "participant": "participant-schema.json",
+    "dataset": "dataset-schema.json"
+  },
+  "fields": [
+    {
+      "name": "study",
+      "schema": "study"
+    },
+    {
+      "name": "participants",
+      "type": "array",
+      "items": {
+        "schema": "participant"
+      }
+    },
+    {
+      "name": "datasets",
+      "type": "array",
+      "items": {
+        "schema": "dataset"
+      }
+    }
+  ]
+}
