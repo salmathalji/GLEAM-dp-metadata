@@ -5,7 +5,7 @@ title: Device Schema
 
 <h2>Device Schema</h2>
 
-{% assign schema = site.data["device.schema.json"] %}
+{% assign schema = site.data["device.schema"] %}
 
 <ul>
   {% for field in schema.fields %}
