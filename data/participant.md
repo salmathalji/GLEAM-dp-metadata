@@ -5,7 +5,7 @@ title: Participant Schema
 
 <h2>Participant Schema</h2>
 
-{% assign schema = site.data["participant.schema.json"] %}
+{% assign schema = site.data["participant.schema"] %}
 
 <ul>
   {% for field in schema.fields %}
