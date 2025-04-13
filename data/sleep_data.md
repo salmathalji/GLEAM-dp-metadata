@@ -5,7 +5,7 @@ title: Sleep_data Schema
 
 <h2>Sleep_data Schema</h2>
 
-{% assign schema = site.data["sleep_data.schema.json"] %}
+{% assign schema = site.data["sleep_data.schema"] %}
 
 <ul>
   {% for field in schema.fields %}
