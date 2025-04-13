@@ -1,6 +1,5 @@
-- study-schema
-- participant-schema
-- device-schema
-- dataset-schema
-- observations-table-schema
-- deployments-table-schema
+- study.schema
+- dataset.schema
+- device.schema
+- participant.schema
+- sleep_data.schema
