@@ -5,7 +5,7 @@ title: Dataset Schema
 
 <h2>Dataset Schema</h2>
 
-{% assign schema = site.data["dataset.schema.json"] %}
+{% assign schema = site.data["dataset.schema"] %}
 
 <ul>
   {% for field in schema.fields %}
