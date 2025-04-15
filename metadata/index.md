@@ -37,16 +37,14 @@ title: Metadata
     </tr>
   </thead>
   <tbody>
-    {% for field in study_schema.properties %}
-      {% assign field_name = field[0] %}
-      {% assign field_data = field[1] %}
+    {% for field in study_schema.fields %}
       <tr>
         <td>
-          <code>{{ field_name }}</code>
-          {% if study_schema.required contains field_name %}<strong>*</strong>{% endif %}
+          <code>{{ field.name }}</code>
+          {% if field.constraints and field.constraints.required %}<strong>*</strong>{% endif %}
         </td>
-        <td>{{ field_data.description }}</td>
-        <td><code>{{ field_data.type }}</code></td>
+        <td>{{ field.description }}</td>
+        <td><code>{{ field.type }}</code></td>
       </tr>
     {% endfor %}
   </tbody>
